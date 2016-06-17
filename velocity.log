@@ -1,0 +1,664 @@
+2016-06-15 12:09:51,166 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-15 12:09:51,167 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-15 12:09:51,167 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-15 12:09:51,167 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-15 12:09:51,168 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-15 12:09:51,171 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-15 12:09:51,171 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-15 12:09:51,176 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-15 12:09:51,181 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-15 12:09:51,238 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-15 12:09:51,240 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-15 12:09:51,243 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-15 12:09:51,245 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-15 12:09:51,248 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-15 12:09:51,249 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-15 12:09:51,289 - Created '20' parsers.
+2016-06-15 12:09:51,297 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-15 12:09:51,409 - Velocimacro : Default library not found.
+2016-06-15 12:09:51,409 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-15 12:09:51,409 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-15 12:09:51,409 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-15 12:09:51,409 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-15 12:14:40,637 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-15 12:14:40,655 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-15 12:14:40,655 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-15 12:14:40,655 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-15 12:14:40,656 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-15 12:14:40,657 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-15 12:14:40,657 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-15 12:14:40,660 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-15 12:14:40,662 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-15 12:14:40,677 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-15 12:14:40,678 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-15 12:14:40,679 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-15 12:14:40,681 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-15 12:14:40,682 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-15 12:14:40,683 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-15 12:14:40,721 - Created '20' parsers.
+2016-06-15 12:14:40,728 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-15 12:14:40,826 - Velocimacro : Default library not found.
+2016-06-15 12:14:40,826 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-15 12:14:40,826 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-15 12:14:40,826 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-15 12:14:40,826 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-16 17:45:41,227 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-16 17:45:41,228 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-16 17:45:41,228 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-16 17:45:41,228 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-16 17:45:41,229 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-16 17:45:41,232 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 17:45:41,232 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 17:45:41,236 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-16 17:45:41,241 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:45:41,302 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-16 17:45:41,304 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-16 17:45:41,307 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-16 17:45:41,309 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-16 17:45:41,311 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-16 17:45:41,313 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-16 17:45:41,394 - Created '20' parsers.
+2016-06-16 17:45:41,403 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-16 17:45:41,501 - Velocimacro : Default library not found.
+2016-06-16 17:45:41,502 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-16 17:45:41,502 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-16 17:45:41,502 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-16 17:45:41,502 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-16 17:46:08,040 - ResourceManager : found tpjsmiddlewareerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,041 - ResourceManager : found tpjssessionerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,042 - ResourceManager : found tpjsapperror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,171 - ResourceManager : found tpjsmiddlewareinvoker.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,174 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 93, column 20]
+2016-06-16 17:46:08,174 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 172, column 20]
+2016-06-16 17:46:08,174 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 255, column 20]
+2016-06-16 17:46:08,174 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 326, column 20]
+2016-06-16 17:46:08,174 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 395, column 20]
+2016-06-16 17:46:08,175 - ResourceManager : found tpjscallfunc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,231 - ResourceManager : found tpjsstartup.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,253 - ResourceManager : found tpjshybridstartupforspa.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,267 - ResourceManager : found tpjswinmobilesequencecontainerglobals.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,271 - ResourceManager : found tpjswinmobilesequence.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,275 - ResourceManager : found tpjsappconfigfortc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,276 - ResourceManager : found customizederrorjsptemplate.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,279 - ResourceManager : found tpspabasetemplateforjs.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 17:46:08,281 - ResourceManager : found tpjsformglobalsforbb10.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:12,607 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-16 18:09:12,609 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-16 18:09:12,609 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-16 18:09:12,609 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-16 18:09:12,610 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-16 18:09:12,611 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 18:09:12,611 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 18:09:12,613 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-16 18:09:12,615 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:12,627 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-16 18:09:12,628 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-16 18:09:12,630 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-16 18:09:12,631 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-16 18:09:12,632 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-16 18:09:12,633 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-16 18:09:12,659 - Created '20' parsers.
+2016-06-16 18:09:12,665 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-16 18:09:12,737 - Velocimacro : Default library not found.
+2016-06-16 18:09:12,737 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-16 18:09:12,737 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-16 18:09:12,737 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-16 18:09:12,737 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-16 18:09:25,584 - ResourceManager : found tpjsmiddlewareerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,584 - ResourceManager : found tpjssessionerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,585 - ResourceManager : found tpjsapperror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,605 - ResourceManager : found tpjsmiddlewareinvoker.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,607 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 93, column 20]
+2016-06-16 18:09:25,607 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 172, column 20]
+2016-06-16 18:09:25,607 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 255, column 20]
+2016-06-16 18:09:25,607 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 326, column 20]
+2016-06-16 18:09:25,607 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 395, column 20]
+2016-06-16 18:09:25,608 - ResourceManager : found tpjscallfunc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,641 - ResourceManager : found tpjsstartup.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,656 - ResourceManager : found tpjshybridstartupforspa.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,664 - ResourceManager : found tpjswinmobilesequencecontainerglobals.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,667 - ResourceManager : found tpjswinmobilesequence.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,669 - ResourceManager : found tpjsappconfigfortc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,670 - ResourceManager : found customizederrorjsptemplate.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,672 - ResourceManager : found tpspabasetemplateforjs.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:09:25,674 - ResourceManager : found tpjsformglobalsforbb10.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:02,988 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-16 18:46:02,988 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-16 18:46:02,988 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-16 18:46:02,988 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-16 18:46:02,989 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-16 18:46:02,991 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 18:46:02,991 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-16 18:46:02,993 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-16 18:46:02,996 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:03,011 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-16 18:46:03,013 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-16 18:46:03,015 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-16 18:46:03,016 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-16 18:46:03,018 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-16 18:46:03,019 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-16 18:46:03,053 - Created '20' parsers.
+2016-06-16 18:46:03,060 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-16 18:46:03,155 - Velocimacro : Default library not found.
+2016-06-16 18:46:03,155 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-16 18:46:03,155 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-16 18:46:03,156 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-16 18:46:03,156 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-16 18:46:20,767 - ResourceManager : found tpjsmiddlewareerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,767 - ResourceManager : found tpjssessionerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,768 - ResourceManager : found tpjsapperror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,792 - ResourceManager : found tpjsmiddlewareinvoker.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,793 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 93, column 20]
+2016-06-16 18:46:20,793 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 172, column 20]
+2016-06-16 18:46:20,793 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 255, column 20]
+2016-06-16 18:46:20,793 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 326, column 20]
+2016-06-16 18:46:20,793 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 395, column 20]
+2016-06-16 18:46:20,794 - ResourceManager : found tpjscallfunc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,849 - ResourceManager : found tpjsstartup.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,876 - ResourceManager : found tpjshybridstartupforspa.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,888 - ResourceManager : found tpjswinmobilesequencecontainerglobals.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,895 - ResourceManager : found tpjswinmobilesequence.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,899 - ResourceManager : found tpjsappconfigfortc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,901 - ResourceManager : found customizederrorjsptemplate.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,904 - ResourceManager : found tpspabasetemplateforjs.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-16 18:46:20,906 - ResourceManager : found tpjsformglobalsforbb10.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:46:47,842 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-17 11:46:47,865 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-17 11:46:47,865 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-17 11:46:47,865 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-17 11:46:47,867 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-17 11:46:47,869 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-17 11:46:47,869 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-17 11:46:47,872 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-17 11:46:47,875 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:46:47,890 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-17 11:46:47,891 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-17 11:46:47,893 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-17 11:46:47,894 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-17 11:46:47,896 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-17 11:46:47,897 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-17 11:46:47,933 - Created '20' parsers.
+2016-06-17 11:46:47,938 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-17 11:46:47,996 - Velocimacro : Default library not found.
+2016-06-17 11:46:47,996 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-17 11:46:47,996 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-17 11:46:47,996 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-17 11:46:47,996 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-17 11:47:04,506 - ResourceManager : found tpjsmiddlewareerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,508 - ResourceManager : found tpjssessionerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,509 - ResourceManager : found tpjsapperror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,588 - ResourceManager : found tpjsmiddlewareinvoker.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,592 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 93, column 20]
+2016-06-17 11:47:04,592 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 172, column 20]
+2016-06-17 11:47:04,592 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 255, column 20]
+2016-06-17 11:47:04,593 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 326, column 20]
+2016-06-17 11:47:04,593 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 395, column 20]
+2016-06-17 11:47:04,595 - ResourceManager : found tpjscallfunc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,736 - ResourceManager : found tpjsstartup.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,777 - ResourceManager : found tpjshybridstartupforspa.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,838 - ResourceManager : found tpjswinmobilesequencecontainerglobals.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,851 - ResourceManager : found tpjswinmobilesequence.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,861 - ResourceManager : found tpjsappconfigfortc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,865 - ResourceManager : found customizederrorjsptemplate.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,872 - ResourceManager : found tpspabasetemplateforjs.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:47:04,876 - ResourceManager : found tpjsformglobalsforbb10.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:32,209 - Log4JLogChute initialized using file 'velocity.log'
+2016-06-17 11:49:32,244 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2016-06-17 11:49:32,244 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-06-17 11:49:32,244 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2016-06-17 11:49:32,245 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.runtime.RuntimeSingleton.init(RuntimeSingleton.java:227)
+	at org.apache.velocity.app.Velocity.init(Velocity.java:111)
+	at com.kony.tool.templateprovider.VelocityTemplateProvider.<clinit>(VelocityTemplateProvider.java:53)
+	at com.pat.tool.keditor.KEditorPlugin.init(KEditorPlugin.java:679)
+	at com.pat.tool.keditor.KEditorPlugin.start(KEditorPlugin.java:578)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:478)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:109)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:191)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+	at org.eclipse.core.launcher.Main.main(Main.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by com.kony.thirdparty.jars_7.0.0.GA_v201602241207
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 52 more
+2016-06-17 11:49:32,247 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-17 11:49:32,247 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2016-06-17 11:49:32,249 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-06-17 11:49:32,251 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:32,266 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-06-17 11:49:32,267 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-06-17 11:49:32,269 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-06-17 11:49:32,270 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-06-17 11:49:32,272 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-06-17 11:49:32,273 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-06-17 11:49:32,304 - Created '20' parsers.
+2016-06-17 11:49:32,312 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2016-06-17 11:49:32,403 - Velocimacro : Default library not found.
+2016-06-17 11:49:32,403 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-06-17 11:49:32,403 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-06-17 11:49:32,403 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2016-06-17 11:49:32,404 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2016-06-17 11:49:45,804 - ResourceManager : found tpjsmiddlewareerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,805 - ResourceManager : found tpjssessionerror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,806 - ResourceManager : found tpjsapperror.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,829 - ResourceManager : found tpjsmiddlewareinvoker.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,830 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 93, column 20]
+2016-06-17 11:49:45,830 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 172, column 20]
+2016-06-17 11:49:45,830 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 255, column 20]
+2016-06-17 11:49:45,830 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 326, column 20]
+2016-06-17 11:49:45,831 - Left side ($palmpre) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. tpjsmiddlewareinvoker.vm [line 395, column 20]
+2016-06-17 11:49:45,831 - ResourceManager : found tpjscallfunc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,879 - ResourceManager : found tpjsstartup.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,901 - ResourceManager : found tpjshybridstartupforspa.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,912 - ResourceManager : found tpjswinmobilesequencecontainerglobals.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,916 - ResourceManager : found tpjswinmobilesequence.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,924 - ResourceManager : found tpjsappconfigfortc.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,927 - ResourceManager : found customizederrorjsptemplate.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,934 - ResourceManager : found tpspabasetemplateforjs.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-06-17 11:49:45,938 - ResourceManager : found tpjsformglobalsforbb10.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

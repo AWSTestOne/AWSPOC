@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "51dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se45bba610024e539231423566949c22",
+    "_text_": "SignOn",
+    "_top_": {
+        "type": "string",
+        "value": "185dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1fe0754bd8e4e9eb637293d2fc8e4e7",
+    "id": "Button0f655669d6f374e",
+    "ide_onClick": "AS_Button_1c9c61dbb7d6492e8accaf80bc41ca5c",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2864b74bb9544052ac6d57301b222fbf",
+    "name": "kony.ui.Button",
+    "parent": "FlexContainer04acbaf67ff8d45",
+    "pf": "Home",
+    "wType": "Button",
+    "zindex": 1
+}
