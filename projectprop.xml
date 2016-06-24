@@ -9,8 +9,8 @@
     <attributes name="ACCOUNT_MANAGER" value="false"/>
     <attributes name="wp8cycle6key" value=""/>
     <attributes name="Home_or_Work_Networking" value="true"/>
-    <attributes name="winenablecrashlogkey" value="false"/>
-    <attributes name="wp8packagepublisheridkey" value=""/>
+    <attributes name="winenablecrashlogkey" value="true"/>
+    <attributes name="wp8packagepublisheridkey" value="caebbe5b-3e26-4beb-b6e0-7abbcabb3cff"/>
     <attributes name="andminsdkkey" value="4.0"/>
     <attributes name="PERSISTENT_ACTIVITY" value="false"/>
     <attributes name="isA11yConfigEnabled" value="false"/>
@@ -136,7 +136,7 @@
     <attributes name="BIND_APPWIDGET" value="false"/>
     <attributes name="wp8cycle5key" value=""/>
     <attributes name="KILL_BACKGROUND_PROCESSES" value="false"/>
-    <attributes name="ipadlandscapemodekey" value="false"/>
+    <attributes name="ipadlandscapemodekey" value="true"/>
     <attributes name="schemekey" value=""/>
     <attributes name="UseSQLCipherFIPS" value="false"/>
     <attributes name="win8lockscreennotificationskey" value="Not set"/>
@@ -144,7 +144,7 @@
     <attributes name="andapplicationtags" value=""/>
     <attributes name="ioscheckboxcorrection" value="true"/>
     <attributes name="exceptionalert" value="true"/>
-    <attributes name="windows10guid" value=""/>
+    <attributes name="windows10guid" value="dd5d246a-84cd-442d-a3b0-e1d31ac08297"/>
     <attributes name="wp8cycle8key" value=""/>
     <attributes name="xhtmlfavicokey" value=""/>
     <attributes name="picturesLibrary" value="false"/>
@@ -183,10 +183,10 @@
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="Webcam" value="true"/>
     <attributes name="chat" value="false"/>
-    <attributes name="winmobileguidkey" value=""/>
+    <attributes name="winmobileguidkey" value="dd5d246a-84cd-442d-a3b0-e1d31ac08297"/>
     <attributes name="SET_ALWAYS_FINISH" value="false"/>
     <attributes name="apptitle" value=""/>
-    <attributes name="apppackagekey" value="com.orgname.Sample"/>
+    <attributes name="apppackagekey" value="com.orgname.AWSPOC"/>
     <attributes name="WP8_ID_CAP_WALLET_SECUREELEMENT" value="false"/>
     <attributes name="SET_ALARM" value="false"/>
     <attributes name="read_device_identifying_information" value="false"/>
@@ -199,7 +199,7 @@
     <attributes name="win8descriptionkey" value="Sample Test Application"/>
     <attributes name="extendTop" value="false"/>
     <attributes name="REORDER_TASKS" value="false"/>
-    <attributes name="iphonebundleidentifierkey" value="com.kony.Sample"/>
+    <attributes name="iphonebundleidentifierkey" value="com.kone.AWSPOC"/>
     <attributes name="WP8_ID_CAP_NETWORKING" value="true"/>
     <attributes name="studiovizproject" value="true"/>
     <attributes name="ID_CAP_SENSORS" value="true"/>
@@ -266,7 +266,7 @@
     <attributes name="passwordkey" value="kds/0eUc+i3BqFqSkpCk4g=="/>
     <attributes name="iostextboxpaddingcorrection" value="true"/>
     <attributes name="protectedmodeenabled_ios" value="false"/>
-    <attributes name="enablecharts2d3diphone" value="false"/>
+    <attributes name="enablecharts2d3diphone" value="true"/>
     <attributes name="win8widelogokey" value=""/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>
     <attributes name="apmcrash" value="true"/>
@@ -294,7 +294,7 @@
     <attributes name="wp8doNotInstalllowerMemory" value="false"/>
     <attributes name="cloud_http_redirect" value="false"/>
     <attributes name="apmservicerequest" value="true"/>
-    <attributes name="appnamekey" value="Sample"/>
+    <attributes name="appnamekey" value="AWSPOC"/>
     <attributes name="log_level" value="ERROR"/>
     <attributes name="tileUpdateRecurrenceKey" value=""/>
     <attributes name="andtargetsdkkey" value="4.0"/>
@@ -363,7 +363,7 @@
     <attributes name="ID_CAP_MEDIALIB" value="true"/>
     <attributes name="WP8_ID_CAP_MAP" value="true"/>
     <attributes name="tcandroid640basefontsize" value="12"/>
-    <attributes name="winmangotiletitlekey" value="Sample"/>
+    <attributes name="winmangotiletitlekey" value="AWSPOC"/>
     <attributes name="WP8_ID_CAP_ISV_CAMERA" value="true"/>
     <attributes name="cloud_web_xml_custom_filters" value=""/>
     <attributes name="READ_CALENDAR" value="false"/>
